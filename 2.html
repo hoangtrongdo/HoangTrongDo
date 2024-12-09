@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="2.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="card__img">
+        <img src="Media/ca.jpg" alt="" />
+      </div>
+      <h2>Hoàng Trọng Đô</h2>
+      <p>Đại Học Khoa Học Huế</p>
+      <div class="card__social">
+<a target="_black" href="https://www.facebook.com/profile.php?id=100040426101505"><i class="fab fa-facebook-f"></i></a>
+<a target="_black" href="https://youtube.com/@ohoang2777?si=vuhDgn7Ps96x4DHI"><i class="fab fa-youtube"></i></a>
+<a target="_black" href="https://www.tiktok.com/@dohoang990?_r=1&_d=secCgYIASAHKAESPgo8sSkHDOvqhrOJvavfwxkBEkFex0V8k4nlqgEAZZU%2B5rGHEuRvGwHw%2FRgjV6rkevALouOnj6VQRqr9KBfJGgA%3D&checksum=8971a18dafa66d228b70f43946fc142c1dc2826c4dace1fa2e30b2997303c2d2&sec_uid=MS4wLjABAAAA_ooyzB2wxhSugPMnDeZj_u_vvYy0i0SQMGEfdLntcVkUlFkDU0Xx3k-AYTkbwKNy&sec_user_id=MS4wLjABAAAA_ooyzB2wxhSugPMnDeZj_u_vvYy0i0SQMGEfdLntcVkUlFkDU0Xx3k-AYTkbwKNy&share_app_id=1180&share_author_id=6820786730204251138&share_link_id=A2D496BA-460B-4BED-8F30-2EC49764371B&sharer_language=vi&social_share_type=4&source=h5_t&timestamp=1733714680&tt_from=copy&u_code=dc5djll3561jll&ug_btm=b8727%2Cb0&user_id=6820786730204251138&utm_campaign=client_share&utm_medium=ios&utm_source=copy"><i class="fab fa-tiktok"></i></a>
+<a target="_black" href="https://github.com/hoangtrongdo/hoangtrongdo1110"><i class="fab fa-github"></i></a>
+    <button class="play-button" onclick="playAudio()">🔈</button>
+    <audio id="audio" loop>
+        <source src="Media/dramatic-hip-hop-music-background-jazz-music-for-short-video-148505.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        const playButton = document.querySelector('.play-button');
+        const audioElement = document.querySelector('audio');
+        playButton.addEventListener('click', () => {
+            if (audioElement.paused) {
+                audioElement.play();  
+                playButton.textContent = '🔊';  
+            } else {
+                audioElement.pause(); 
+                playButton.textContent = '🔈';  
+            }
+        });
+    </script>
+  </body>
+</html>
